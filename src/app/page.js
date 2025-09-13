@@ -1,7 +1,8 @@
-import { Header } from '@/components/Header';
+import { Sidebar } from '@/components/Sidebar';
 import { About } from '@/components/About';
 import { Projects } from '@/components/Projects';
-import { Footer } from '@/components/Footer';
+import { Skills } from '@/components/Skills';
+import { Contact } from '@/components/Contact';
 
 import path from 'path';
 import fs from 'fs/promises';
@@ -18,11 +19,14 @@ export default async function Home() {
   const data = await getData();
 
   return (
-    <main>
-      <Header name={data.name} socials={data.socials} />
-      <About bio={data.bio} />
-      <Projects projects={data.projects} />
-      <Footer socials={data.socials} />
-    </main>
+    <div>
+      <Sidebar/>
+      <main>
+        <About name={data.name} bio={data.bio} resumeUrl={data.resumeUrl} />
+        <Projects projects={data.projects} />
+        <Skills skills={data.skills} />
+        <Contact email={data.email} socials={data.socials} />
+      </main>
+    </div>
   );
 }

@@ -1,13 +1,9 @@
-.projects {
-  padding: 40px 0;
-  border-bottom: 1px solid #eeeeee;
-  margin-bottom: 40px;
-}
-
 .heading {
   font-family: var(--font-lora);
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: var(--color-font-light);
 }
 
 .list {
@@ -20,16 +16,68 @@
 }
 
 .card {
-  border: 1px solid #eeeeee;
-  padding: 20px;
+  padding: 0px;
 }
 
 .card h3 {
   margin-top: 0;
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .card p {
   font-size: 16px;
   line-height: 1.5;
+  color: var(--color-font-light);
+}
+
+/* Add these styles to your Projects.module.css file */
+.technologies {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech_tag {
+  background-color: var(--color-font-dark);
+  color: var(--color-font-muted);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project_button {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  border: 1px solid #aeb9c4;
+  border-radius: 20px;
+  color: #aeb9c4;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.project_button:hover {
+  background-color: var(--color-font-muted);
+  color: var(--color-font-dark);
+}
+
+.title_container {
+  display: flex;
+  align-items: center; /* Vertically aligns the logo and title */
+  gap: 15px; /* Adds space between the logo and title */
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0; /* Remove the bottom margin as gap is now used */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }

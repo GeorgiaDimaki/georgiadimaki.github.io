@@ -1,0 +1,32 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: left;   /* Center items horizontally */
+}
+
+.heading {
+  font-family: var(--font-lora);
+  color: var(--color-font-dark);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: var(--color-font-dark);
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: var(--color-font-dark);
+  font-size: 28px; 
+}

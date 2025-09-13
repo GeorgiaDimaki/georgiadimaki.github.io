@@ -1,21 +1,28 @@
-body {
-  font-family: var(--font-source-sans); /* Default font */
-  background-color: #ffffff;
-  color: #333333;
+:root {
+  --sidebar-width: clamp(200px, 25vw, 300px);
+  --color-one: #2c3e50;
+  --color-two: #E7DEE6;
+  --color-three: #B4BCCE;
+  --color-font-dark: var(--color-one);
+  --color-font-muted:  #aeb9c4;
+  --color-font-light: #eeeeee;
 }
 
-/* We can add rules for specific tags later */
+body {
+  font-family: var(--font-source-sans);
+  color: var(--color-font-light); 
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/11/52/computer-1869306_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin:0;
+}
+
 h1, h2, h3 {
-  font-family: var(--font-lora); /* Heading font */
-}
-
-body {
-  background-color: #ffffff;
-  color: #333333;
+  font-family: var(--font-lora);
 }
 
 main {
-  max-width: 960px;
-  margin: 0 auto; /* This centers the container */
-  padding: 20px;
+  margin-left: var(--sidebar-width);
+  flex-grow: 1;
 }

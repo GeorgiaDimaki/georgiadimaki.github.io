@@ -1,36 +1,59 @@
 {
   "name": "Georgia Dimaki",
+  "email": "georgia_dimaki@alum.mit.edu",
   "bio": "I am a software engineer based in Boston, MA. At heart, I am a creator.",
+  "resumeUrl": "/resume.pdf",
   "socials": [
     {
       "name": "Email",
-      "url": "mailto:fake-email@example.com"
+      "url": "mailto:georgia_dimaki@alum.mit.edu",
+      "icon": "FaRegEnvelope"
     },
     {
       "name": "GitHub",
-      "url": "https://github.com/georgiadimaki"
+      "url": "https://github.com/georgiadimaki",
+      "icon": "FaGithub"
     },
     {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/georgiadimaki/"
+      "url": "https://www.linkedin.com/in/georgiadimaki/",
+      "icon": "FaLinkedin"
     }
   ],
   "projects": [
     {
-      "title": "Project One",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ad magna."
+        "title": "Notebook Slide Editor",
+        "description": "The missing interactive slide show for Jupyter in VS Code. Your notebook is the presentation—edit, run code, and present in a single, fluid experience.",
+        "technologies": ["TypeScript", "CSS", "JavaScript"],
+        "links": [
+            {
+                "title": "Get Extension",
+                "url": "https://marketplace.visualstudio.com/items?itemName=gdimaki.ipynb-slide-preview"
+            },
+            {
+                "title": "View on GitHub",
+                "url": "https://github.com/GeorgiaDimaki/ipynb-slide-preview"
+            }
+        ],
+        "logo":"/images/ipynb-logo.png"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Front End",
+      "technologies": ["HTML5", "CSS3", "React", "JavaScript"]
     },
     {
-      "title": "Project Two",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ad magna."
+      "category": "Back End",
+      "technologies": ["Python", "Java", "Node.js", "C++"]
     },
     {
-      "title": "Project Three",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ad magna."
+      "category": "Data Analysis",
+      "technologies": ["Numpy", "Pandas", "R", "MATLAB", "Julia"]
     },
     {
-      "title": "Project Four",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ad magna."
+      "category": "Machine Learning",
+      "technologies": ["Scikit Learn", "TensorFlow", "Keras", "Pytorch"]
     }
   ]
 }

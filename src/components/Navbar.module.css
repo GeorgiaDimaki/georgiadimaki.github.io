@@ -1,0 +1,44 @@
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-bottom: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-font-muted); /* Muted text color */
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between line and text */
+}
+
+.nav a:hover {
+  color: var(--color-font-light); /* White text on hover */
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: #aeb9c4;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover .line {
+  width: 60px;
+  background-color: #ffffff;
+}
+
+.nav a.active .line {
+  width: 60px;
+  background-color: #ffffff;
+}
+.nav a.active {
+  color: #ffffff;
+}

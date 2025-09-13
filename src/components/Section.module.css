@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0; /* Vertical padding */
+}
+
+.inner {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 150px; /* Horizontal padding */
+}

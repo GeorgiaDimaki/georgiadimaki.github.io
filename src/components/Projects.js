@@ -1,17 +1,16 @@
+import { Section } from './Section';
+import { Project } from './Project';
 import styles from './Projects.module.css';
 
 export function Projects({ projects }) {
   return (
-    <section className={styles.projects}>
+    <Section id="projects" backgroundColor="var(--color-one)">
         <h2 className={styles.heading}>Projects</h2>
         <ul className={styles.list}>
             {projects.map((project, index) => (
-            <li key={index} className={styles.card}>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-            </li>
+                <Project key={index} project={project} />
             ))}
         </ul>    
-    </section>
+    </Section>
   );
 }
