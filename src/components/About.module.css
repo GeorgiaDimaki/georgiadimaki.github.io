@@ -1,0 +1,16 @@
+.about {
+  padding: 40px 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-family: var(--font-lora);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+}

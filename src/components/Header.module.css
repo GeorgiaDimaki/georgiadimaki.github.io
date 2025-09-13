@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 40px;
+}
+
+.name {
+  font-family: var(--font-lora);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
