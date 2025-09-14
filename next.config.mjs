@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export', // Ensures the build command creates a static export
+};
 
-export default nextConfig;
+module.exports = nextConfig;
