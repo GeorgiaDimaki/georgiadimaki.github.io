@@ -1,4 +1,5 @@
 import { Sidebar } from '@/components/Sidebar';
+import { MobileNav } from '@/components/MobileNav';
 import { About } from '@/components/About';
 import { Projects } from '@/components/Projects';
 import { Skills } from '@/components/Skills';
@@ -21,6 +22,7 @@ export default async function Home() {
   return (
     <div>
       <Sidebar/>
+      <MobileNav/>
       <main>
         <About name={data.name} bio={data.bio} resumeUrl={data.resumeUrl} />
         <Projects projects={data.projects} />
