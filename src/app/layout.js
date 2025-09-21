@@ -19,7 +19,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  gaMeasurementId = 'G-B62LXGZ6QE';
+  const gaMeasurementId = 'G-B62LXGZ6QE';
   return (
     <html lang="en">
       <body>
