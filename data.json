@@ -54,6 +54,10 @@
     {
       "category": "Machine Learning",
       "technologies": ["Scikit Learn", "TensorFlow", "Keras", "Pytorch"]
+    },
+    {
+      "category": "AI / LLM Engineering",
+      "technologies": ["RAG", "Agentic Patterns", "Function Calling", "Evals", "LangChain", "Claude API", "OpenAI SDK"]
     }
   ]
 }
